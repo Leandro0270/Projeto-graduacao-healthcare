@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="icon" href="icone.png">
+    <link rel="stylesheet" href="contato.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1 class="logo"><a href="index.html"><img src="logo.png" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="valores.html">Valores</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li class="atual">Contato</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article>
+            <section>
+                <h1 id="titulo">Formulário de Contato</h1>
+                <p id="subtitulo">Para entrar em contato com nós, ficar informado sobre novas atualizações na página ou
+                fazer parte da equipe de desenvolvimento, preencha o formulário abaixo:</p>
+                <br>
+                <table border="1px" width="47%">
+                    <tr>
+                    <form id="form">
+                        <td><label for="nome">Nome:</label>
+                        <input type="text" id="nome" required placeholder = "Carla"></td> 
+                        <td><label for="sobrenome">Sobrenome:</label> 
+                        <input type="text" id="sobrenome" required placeholder = "Gomez"></td>
+                    </tr>
+
+                    <tr>    
+                        <td><label for="email">E-mail:</label>
+                        <input type="email" id="email" required placeholder = "carla.gomez@gmail.com" onkeydown="validar()">
+                        <span id="text"></span></td>
+                        <td><label for="number" id="tel">Telefone:</label>
+                        <input type="tel" id="number" required placeholder = "(11) 9825-4847"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="data"> Data de nascimento:</label>
+                        <input type="date" id="data"></td>
+
+                        <td><legend>Este número possui Whatsapp?</legend>
+                        <label for="zaps"><input id="zaps" type="radio" name="zap" value="sim" required> Sim</label>
+                        <label for="zapn"><input id="zapn" type="radio" name="zap" value="nao"> Não</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><legend>Você possui plano de saúde ou convênio?</legend>
+                        <label for="ps"><input id="ps" type="radio" name="ps" value="sim"> Sim</label>
+                        <label for="pn"><input id="pn" type="radio" name="ps" value="nao"> Não</label></td>
+                        <td><legend>Quais são seus interesses?</legend>
+                        <label for="web"><input id="web" type="checkbox" value="web design"> Web Design</label>
+                        <label for="prog"><input id="prog" type="checkbox" value="programacao"> Programação</label>
+                        <label for="tele"><input id="tele" type="checkbox" value="telemedicina"> Telemedicina</label></td>
+                    </tr>
+                            
+                    <tr>
+                        <td><label for="dev">Você é desenvolvedor?</label>
+                            <select id="dev">
+                                <option selected disabled="">Selecione</option>
+                                <option>Back-end</option>
+                                <option>Front-end</option>
+                                <option>Full-stack</option>
+                                <option>Não</option>
+                            </select>
+                        </td>
+                        <td>
+                        <label for="sobre">Sobre mim:</label>
+                        <textarea rows="4" cols="5" type='textarea' id="sobre" style="width:20em;"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="saúde">Quantas horas você dorme por noite?</label>
+                        <input type="time" name="saúde"></td>
+                        <th><button class="enviar" type="submit">Enviar</button></th>
+                    </tr>
+                    </form>
+                </table>
+            </section>
+        <img src="form.png" class="imagem" alt="formulario">
+    </article>
+    <aside>
+        <p>Para mais informações, acesse:</p>
+            <ul class="lista">
+                <li><a href="https://www.globalmedclinica.com.br/">GlobalMed</a></li>
+                <li><a href="https://drdetodos.com.br/">Doutor de Todos</a></li>
+                <li><a href="https://brasiltelemedicina.com.br/">Brasil Telemedicina</a></li>
+                <li><a href="https://www.conexasaude.com.br/">Conexa Saúde</a></li>
+                <li><a href="https://portaltelemedicina.com.br/">Portal Telemedicina</a></li>
+            </ul>
+        <br>
+    </aside>
+    <iframe class = 'video' src="https://www.youtube.com/embed/TjhrtLTPlsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <footer>
+        <p>Acesse nossa <a href="index.html">homepage</a> para mais informações.</p>
+        <p style="padding-top: 0.2em;">Confira ainda os <a href="valores.html">valores</a> e <a href="especialidades.html">especialidades</a> disponíveis.</p>
+    </footer>
+    <script>
+        function validar() {
+            var form = document.getElementById("form");
+            var email = document.getElementById("email").value;
+            var text = document.getElementById("text");
+            var padrao = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (email.match(padrao)) {
+                form.classList.add("valid")
+                form.classList.remove("invalid")
+                text.innerHTML = "E-mail válido.";
+                text.style.color = "#228B22";
+            } else {
+                form.classList.remove("invalid")
+                form.classList.add("valid")
+                text.innerHTML = "Insira um e-mail válido!";
+                text.style.color = "#ff0000";
+            }
+        }
+    </script>
+</body>
+</html>
