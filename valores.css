@@ -1,0 +1,186 @@
+html{
+    overflow-x: hidden;
+    position: relative;
+}
+
+*{
+    margin: 0;
+}
+
+header{
+    background: #ff6b6b;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 135px;
+    box-shadow: 0 0 10px;
+}
+
+.menu{
+    position: relative;
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-top: 13px;
+}
+
+.logo img{
+    width:320px;
+    height:110px;
+}
+
+nav{
+    position: absolute;
+    top: 47px;
+    right:0;
+}
+
+nav li{
+    display:inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    color: whitesmoke;
+    font-size: 28px;
+    text-decoration: none;
+    font-family: "Cambria";
+}
+
+nav a:hover{
+    color: deepskyblue;
+}
+
+.atual{
+    color: deepskyblue;
+    font-size: 28px;
+    font-family: "Cambria";
+}
+
+.banner{
+    padding: 5vw 0 5vw 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 6vw;
+    background-image: linear-gradient(335deg, #d4edee 0, #d4edf0 6.25%, #d4ecf2 12.5%, #d5ecf3 18.75%, #d6ebf5 25%, #d8ebf6 31.25%,
+    #daeaf7 37.5%, #dceaf8 43.75%, #dee9f8 50%, #e0e8f8 56.25%, #e3e8f8 62.5%, #e6e7f7 68.75%, #e8e6f7 75%, #ebe6f6 81.25%, #ede5f4 87.5%, #f0e4f3 93.75%, #f2e4f1 100%);
+}
+
+#frase{
+    font-family: "Cambria";
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1vw;
+    margin-bottom: -1.5vw;
+}
+
+.funcional{
+    box-shadow: 0 0 6px;
+    background-image: linear-gradient(65deg, #85e1ff 0, #60ccf8 50%, #2eb8e9 100%);
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.funcional p{
+    border-top: 0.5vw solid #ff6b6b;
+    border-bottom: 0.5vw solid #ff6b6b;
+    text-align: center;
+    display: block;
+    width: 35%;
+    color: black;
+    line-height: 1.8;
+    font-size: 1.3vw;
+    font-family: "Berlin Sans FB";
+}
+
+.funcional img{
+    margin-top: 1vw;
+    width: 15%;
+    height: 20vw;
+}
+
+.balela{
+    box-shadow: 0 0 6px;
+    background-image: linear-gradient(50deg, #74cfff 0, #4d98ff 50%, #2964ad 100%);
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.balela h1{
+    padding-bottom: 1vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color:#ff6b6b;
+    font-family: "Berlin Sans FB";
+}
+
+.pb{
+    text-align: center;
+    display: block;
+    width: 35%;
+    color: white;
+    font-size: 1.2vw;
+    font-family: "Berlin Sans FB";
+    padding-bottom: 0.5vw;
+}
+
+table{
+    text-align: center;
+    color: white;
+    padding-bottom: 1vw;
+}
+
+.cima{
+    padding: 0.25vw;
+    background-color: #a58bde;
+}
+
+.especialista{
+    padding: 0.25vw;
+    background-color: #7135f3;
+}
+
+.particular{
+    padding: 0.25vw;
+    background-color: mediumpurple;
+}
+
+.doutor{
+    padding: 0.25vw;
+    background-color: mediumpurple;
+}
+
+.economia{
+    padding: 0.25vw;
+    background-color: #6b43b0;
+}
+
+footer{
+    background-color: #a0d7fd;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 21px;
+    font-family: "Cambria";
+    line-height: 1.5;
+}
+
+footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #ff6b6b;
+}
